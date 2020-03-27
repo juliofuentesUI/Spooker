@@ -3,19 +3,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
+
 //webpack NEEDS an absolut epath to the distribution folder
 // and that is why we use __dirname
 module.exports = {
     entry: './src/index.js',
-    output: {
-        filename: 'bundle.[contenthash].js',
-        path: path.resolve(__dirname, 'dist')
-    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Spooker',
             template: `${__dirname}/src/template.html`,
-            filename: 'index.html'
+            filename: 'index.html',
+            minify: false,
+            favicon: './src/assets/favicon/favicon3.ico'
         }),
         new CleanWebpackPlugin()
     ],
@@ -37,10 +36,6 @@ module.exports = {
                     }
                 }
             },
-            // {
-            //     test: /\.html$/,
-            //     use: ['html-loader']
-            // },
             {
                 test: /\.(svg|jpe?g|png|gif)$/,
                 loader: 'file-loader',
@@ -51,6 +46,5 @@ module.exports = {
             }
         ]
     },
-    devtool: 'cheap-module-eval-source-map',
-    mode: 'development'
+    devtool: 'cheap-module-eval-source-map'
 };
