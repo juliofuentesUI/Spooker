@@ -1,7 +1,7 @@
 const path = require('path');
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
-const Dotenv = require('dotnev-webpack');
+const Dotenv = require('dotenv-webpack');
 
 
 //webpack NEEDS an absolut epath to the distribution folder
@@ -10,7 +10,7 @@ const Dotenv = require('dotnev-webpack');
 //therefore, you won't see an entry property here bcause its defined
 //already in webpack.common.js
 //for example, we don't need to hash shit for development
-module.exports = merge(common, {
+module.exports = merge.smart(common, {
     mode: 'development',
     output: {
         filename: 'main.js',
@@ -25,10 +25,5 @@ module.exports = merge(common, {
         new Dotenv({
             path: './.env.development'
         })
-    ],
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    }
+    ]
 });

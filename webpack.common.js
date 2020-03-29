@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 
@@ -16,14 +17,30 @@ module.exports = {
             minify: false,
             favicon: './src/assets/favicon/favicon3.ico'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin()
     ],
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.module\.css$/,
                 exclude: /node_modules/,
-                use: ['style-loader', 'css-loader']
+                use: [ 
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                localIdentName: '[name]__[local]--[hash:base64:5]',
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.css$/,
+                exclude: [/node_modules/, /\.module\.css$/],
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
             {
                 test: /\.(js|jsx)$/,

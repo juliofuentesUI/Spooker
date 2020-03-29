@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import SVG from './assets/webpack.svg';
+import { Navbar } from './components/NavBar/Navbar';
+import classes from './App.css';
 
 class App extends Component {
 
     state = {
-        testing: 'nothing'
+        testing: 'TESTING FOOL'
     }
 
     render() {
         return (
             <div>
-                <p>Testing new new shit</p>
+                <Navbar />
+                <p>Testing new new yooo</p>
                 <img src={SVG} />
-                <h1>We are in {process.env.NODE_ENV} mode </h1>
+                <h1 className={classes.para1}>We are in {process.env.NODE_ENV} mode </h1>
             </div>
         );
     }
