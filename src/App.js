@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './components/NavBar/Navbar';
 import classes from './GlobalStyles.css';
 import Layout from './hoc/Layout/Layout';
+import SpookerMain from './containers/SpookerMain/SpookerMain';
+import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
 
@@ -10,10 +11,19 @@ class App extends Component {
     }
 
     render() {
+
+        let routes = (
+            <Switch>
+                <Route path="/" exact render={(routeProps) => <SpookerMain {...routeProps}  elementType="input" />} />
+            </Switch>
+        );
+
         return (
             <div>
                 <Layout>
-                    <Navbar />
+                    {routes}
+                    {/* routes will be rendered here, but despite what routes load
+                    ill always want the navbar , so put the navbar INSIDE layout.  */}
                 </Layout>
             </div>
         );

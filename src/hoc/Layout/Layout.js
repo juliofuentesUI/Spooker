@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navbar } from '../../components/NavBar/Navbar';
 // import classes from './Layout.module.css';
 //import redux later.
 
@@ -11,6 +12,7 @@ class Layout extends Component {
     render() {
         return (
             <main>
+                <Navbar />
                 {this.props.children}
             </main>
         );
