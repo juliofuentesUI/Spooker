@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+*, *::before, *::after {box-sizing: border-box;}
+
+* {
+    background-color: rgb(255, 250, 233);
+    margin: 0;
+    padding: 0;
+}

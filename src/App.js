@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SVG from './assets/webpack.svg';
 import { Navbar } from './components/NavBar/Navbar';
-import classes from './App.css';
+import classes from './GlobalStyles.css';
+import Layout from './hoc/Layout/Layout';
 
 class App extends Component {
 
@@ -12,10 +12,9 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Navbar />
-                <p>Testing new new yooo</p>
-                <img src={SVG} />
-                <h1 className={classes.para1}>We are in {process.env.NODE_ENV} mode </h1>
+                <Layout>
+                    <Navbar />
+                </Layout>
             </div>
         );
     }
