@@ -12,9 +12,10 @@ const Input = (props) => {
             inputElement = <input 
                 onChange={props.changed}
                 className={classes.Input}
-                type={props.type}
-                placeholder={props.placeholder}
+                type={props.type ? props.type : 'text'}
+                placeholder={props.placeholder ? props.placeholder : ''}
                 value={props.value}
+                name={props.name}
             />
             break;
         default:

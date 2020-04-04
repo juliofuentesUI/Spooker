@@ -14,7 +14,8 @@ class App extends Component {
 
         let routes = (
             <Switch>
-                <Route path="/" exact render={(routeProps) => <SpookerMain {...routeProps}  elementType="input" />} />
+                <Route path="/" exact 
+                render={(routeProps) => <SpookerMain {...routeProps} />} />
             </Switch>
         );
 
