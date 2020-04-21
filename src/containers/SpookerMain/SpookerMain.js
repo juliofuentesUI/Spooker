@@ -19,7 +19,7 @@ const SpookerMain = (props) => {
     };
 
     return (
-        <div>
+        <div className={classes.mainInputs}>
             <Input changed={inputHandler} 
             elementType="input"
             placeholder='Petition' 

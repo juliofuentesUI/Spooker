@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar } from '../../components/NavBar/Navbar';
+import Footer from '../../components/Footer/Footer.js';
 // import classes from './Layout.module.css';
 //import redux later.
 
@@ -8,12 +9,12 @@ import { Navbar } from '../../components/NavBar/Navbar';
 
 class Layout extends Component {
 
-
     render() {
         return (
             <main>
                 <Navbar />
                 {this.props.children}
+                <Footer />
             </main>
         );
     }
