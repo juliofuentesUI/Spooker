@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import classes from './GlobalStyles.css';
 import Layout from './hoc/Layout/Layout';
 import { Switch, Route } from 'react-router-dom';
+import Shop from './containers/Shop/Shop';
 
 class App extends Component {
 
     state = {
-        testing: 'TESTING FOOL'
+        testing: 'TESTING '
     }
 
     render() {
@@ -14,7 +15,7 @@ class App extends Component {
         let routes = (
             <Switch>
                 <Route path="/" exact 
-                render={(routeProps) => <div>Component goes here</div>} />
+                render={Shop} />
             </Switch>
         );
 
