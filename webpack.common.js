@@ -11,7 +11,7 @@ module.exports = {
     entry: './src/index.js',
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Spooker',
+            title: 'Fashion App',
             template: `${__dirname}/src/template.html`,
             filename: 'index.html',
             minify: false,

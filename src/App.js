@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classes from './GlobalStyles.css';
 import Layout from './hoc/Layout/Layout';
-import SpookerMain from './containers/SpookerMain/SpookerMain';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -15,7 +14,7 @@ class App extends Component {
         let routes = (
             <Switch>
                 <Route path="/" exact 
-                render={(routeProps) => <SpookerMain {...routeProps} />} />
+                render={(routeProps) => <div>Component goes here</div>} />
             </Switch>
         );
 
