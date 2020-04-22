@@ -17,6 +17,10 @@ module.exports = merge.smart(common, {
         path: path.resolve(__dirname, 'dist')
     },
     devtool: 'cheap-module-eval-source-map',
+    devServer: {
+        overlay: true,
+        port: 3000
+    },
     plugins: [
         new Dotenv({
             path: './.env.development'

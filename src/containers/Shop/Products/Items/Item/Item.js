@@ -3,7 +3,7 @@ import React from 'react';
 const Item = (props) => {
     return (
         <div>
-            Item here fuasdfkk!
+            Item here yay!
         </div>
     );
 };
