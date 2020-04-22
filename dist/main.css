@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=Cinzel&display=swap);
+*, *::before, *::after {box-sizing: border-box;}
+
+* {
+    background-color: rgb(255, 250, 233);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: rgb(208, 231, 236);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(250, 248, 242, 0.8);
+}
+
+
+.Navbar-module__logo--26w9E {
+    cursor: pointer;
+}
+
+.Navbar-module__navLinks--3O8gE {
+    list-style: none;
+}
+
+.Navbar-module__navLinks--3O8gE li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.Navbar-module__navLinks--3O8gE li a{
+    transition: all 0.3s ease 0s;
+}
+
+.Navbar-module__navLinks--3O8gE li a:hover {
+    color: #ffffff00;
+}
+
+nav ul a, button {
+    font-family: Cinzel, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.Footer-module__FooterParent--12MWC {
+    text-align: center;
+    height: 66px;
+    background-color: black;
+}
+

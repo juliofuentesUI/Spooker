@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
@@ -17,7 +16,6 @@ module.exports = {
             minify: false,
             favicon: './src/assets/favicon/favicon3.ico'
         }),
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ],
     module: {

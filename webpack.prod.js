@@ -17,6 +17,7 @@ module.exports = merge.smart(common, {
     },
     devtool: 'none',
     plugins: [
+        new CleanWebpackPlugin(),
         new Dotenv({
             path: './.env.production'
         })
