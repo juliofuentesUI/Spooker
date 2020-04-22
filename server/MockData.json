@@ -1,0 +1,69 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "gender": "male",
+            "name": "Kevin hoodie",
+            "category": "outerwear",
+            "price": 99,
+            "stock": {
+                "small": 1,
+                "medium": 4,
+                "large": 3
+            },
+            "imageUrl": "../dist/images/hoodie1.jpg" 
+        },
+        {
+            "id": 2,
+            "gender": "male",
+            "name": "Oversized jacket",
+            "category": "outerwear",
+            "price": 150,
+            "stock": {
+                "small": 3,
+                "medium": 1,
+                "large": 5
+            },
+            "imageUrl": "../dist/images/jacket2.jpg" 
+        },
+        {
+            "id": 3,
+            "gender": "male",
+            "name": "Drop Shoulder T-shirt ",
+            "category": "t-shirts",
+            "price": 40,
+            "stock": {
+                "small": 1,
+                "medium": 9,
+                "large": 10
+            },
+            "imageUrl": "../dist/images/tshirt3.jpg" 
+        },
+        {
+            "id": 4,
+            "gender": "female",
+            "name": "California SunDress",
+            "category": "dresses",
+            "price": 150,
+            "stock": {
+                "small": 8,
+                "medium": 9,
+                "large": 4
+            },
+            "imageUrl": "../dist/images/dress4.jpg"
+        },
+        {
+            "id": 5,
+            "gender": "female",
+            "name": "Girl boots",
+            "category": "shoes",
+            "price": 120,
+            "stock": {
+                "small": 0,
+                "medium": 4,
+                "large": 3
+            },
+            "imageUrl": "../dist/images/boots5.jpg"
+        }
+    ]
+}
