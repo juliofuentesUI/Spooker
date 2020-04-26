@@ -1,0 +1,2 @@
+export const SET_CLOTHES = 'SET_CLOTHES';
+export const SET_PRODUCTS_FAILED = 'SET_PRODUCTS_FAILED';

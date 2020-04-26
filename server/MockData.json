@@ -11,7 +11,7 @@
                 "medium": 4,
                 "large": 3
             },
-            "imageUrl": "../dist/images/hoodie1.jpg" 
+            "imageUrl": "/images/hoodie1.jpg" 
         },
         {
             "id": 2,
@@ -24,7 +24,7 @@
                 "medium": 1,
                 "large": 5
             },
-            "imageUrl": "../dist/images/jacket2.jpg" 
+            "imageUrl": "/images/jacket2.jpg" 
         },
         {
             "id": 3,
@@ -37,7 +37,7 @@
                 "medium": 9,
                 "large": 10
             },
-            "imageUrl": "../dist/images/tshirt3.jpg" 
+            "imageUrl": "/images/tshirt3.jpg" 
         },
         {
             "id": 4,
@@ -50,7 +50,7 @@
                 "medium": 9,
                 "large": 4
             },
-            "imageUrl": "../dist/images/dress4.jpg"
+            "imageUrl": "/images/dress4.jpg"
         },
         {
             "id": 5,
@@ -63,7 +63,7 @@
                 "medium": 4,
                 "large": 3
             },
-            "imageUrl": "../dist/images/boots5.jpg"
+            "imageUrl": "/images/boots5.jpg"
         }
     ]
 }
