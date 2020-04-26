@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    allProducts: "ALL PRODUCTS HERE"
+    allProducts: null
 }
 
 const setClothes = (state, action) => {

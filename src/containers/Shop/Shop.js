@@ -5,21 +5,20 @@ import * as actions from './../../store/actions/index';
 
 const Shop = (props) => {
 
-    const clothes = useSelector(state => state.allProducts);
-    console.log('VALUE OF CLOTHES IS', clothes);
+    const allProducts = useSelector(state => state.allProducts);
     const dispatch = useDispatch();
 
-    let data = null;
+    console.log('VALUE OF CLOTHES IS', allProducts);
+
 
     useEffect(() => {
         dispatch(actions.initProducts());
     }, []);
 
-    let products = data ? <Products /> : <div> Loading ... </div>
+    let products = allProducts ? <Products /> : <div> Loading ... </div>
 
     return (
         <div>
-            <img src="/images/hoodie1.jpg" alt="a hoodie" />
             {products}
         </div>
     );
