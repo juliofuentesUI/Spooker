@@ -12,9 +12,9 @@ const Items = (props) => {
     });
 
     return (
-        <div>
+        <React.Fragment>
             {items}
-        </div>
+        </React.Fragment>
     );
 };
 
