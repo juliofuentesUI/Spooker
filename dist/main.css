@@ -41,6 +41,7 @@ button:hover {
 }
 
 .Navbar-module__navLinks--3O8gE li {
+    transition: all 0.3s ease 0s;
     display: inline-block;
 }
 
@@ -48,15 +49,22 @@ button:hover {
     transition: all 0.3s ease 0s;
     border-left: 1px solid #e4e4e4;
     padding: 0px 20px;
+    color: inherit;
+}
+
+.Navbar-module__navLinks--3O8gE li:hover {
+    transform: scale(1.2);
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .Navbar-module__navLinks--3O8gE li:last-child a {
     border-right: 1px solid #e4e4e4;
 }
 
-.Navbar-module__navLinks--3O8gE li a:hover {
-    color: #ffffff00;
-}
+/* .navLinks li a:hover {
+    color: #d48176;
+} */
 
 nav ul a, button {
     font-family: Roboto;
