@@ -29,7 +29,7 @@ header button {
 }
 
 button:hover {
-    background-color: rgba(250, 248, 242, 0.8);
+    transform: scale(1.2);
 }
 
 .Navbar-module__logo--26w9E {
@@ -62,9 +62,6 @@ button:hover {
     border-right: 1px solid #e4e4e4;
 }
 
-/* .navLinks li a:hover {
-    color: #d48176;
-} */
 
 nav ul a, button {
     font-family: Roboto;
@@ -73,6 +70,14 @@ nav ul a, button {
     text-decoration: none;
     color: black;
 }
+
+.Navbar-module__headerNavBottom--23dFK {
+    height: 78px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+};
 
 
 .Footer-module__FooterParent--12MWC {

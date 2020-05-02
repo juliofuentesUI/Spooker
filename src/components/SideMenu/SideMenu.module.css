@@ -1,0 +1,72 @@
+
+.test {
+    background: #FFF;
+    width: 50px;
+    height: 100px;
+}
+
+.headerMenuWrap {
+    position: relative;
+    left: 20px;
+    /* left: 10%; */
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+/* .headerMenuWrap span::before {
+    content: '';
+}
+
+.headerMenuWrap span::after {
+    content: '';
+} */
+
+/* .headerMenuWrap span {
+    width: 28px;
+    height: 2px;
+    background: black;  
+    border-radius: 20px;
+    transition: 500ms cunix-bezier(0.77, 0, 0.175, 1);
+} */
+
+.headerMenuWrap span,
+.headerMenuWrap span::after,
+.headerMenuWrap span::before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 2.5px;
+    background: black;
+    border-radius: 20px;
+    transition: 500ms cunix-bezier(0.77,0,0.175, 1);
+}
+
+.headerMenuWrap span::before {
+    top: -8px;
+}
+
+.headerMenuWrap span::after {
+    top: 8px;
+}
+
+.headerMenuWrap.active > span {
+    background: transparent;
+}
+
+.headerMenuWrap.active > span::after,
+.headerMenuWrap.active > span::before {
+    background: #005C9C;
+    top: 0;
+}
+
+.headerMenuWrap.active > span::before {
+    transform: rotate(-225deg);
+}
+
+.headerMenuWrap.active > span::after {
+    transform: rotate(225deg);
+}
+

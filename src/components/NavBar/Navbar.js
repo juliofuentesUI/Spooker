@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from './Navbar.module.css';
-import Spooker from '../../assets/favicon/Spooker.png';
+import SideMenu from './../SideMenu/SideMenu';
 
 export const Navbar = () => {
     return (
             <header>
                 <div className={classes.headerNavTop}>
-                    <p>LICORIS</p>
+                    <p>LYCORIS</p>
                     <nav>
                         <ul className={classes.navLinks}>
                             <li><a href="#">HOME</a></li>
@@ -17,7 +17,7 @@ export const Navbar = () => {
                     <a><button>CONTACT ME</button></a>
                 </div>
                 <div className={classes.headerNavBottom}>
-
+                    <SideMenu />
                 </div>
             </header>
     );
