@@ -5,9 +5,11 @@ const SideMenu = (props) => {
 
     const [menuClicked, toggleMenu] = useState(false);
     const inputClasses = [classes.headerMenuWrap];
+    const hiddenMenuClasses = [classes.menu];
 
     if (menuClicked) {
         inputClasses.push(classes.active);
+        hiddenMenuClasses.push(classes.active);
     }
 
     const toggleSideMenu = () => {
@@ -16,15 +18,17 @@ const SideMenu = (props) => {
 
 
     return (
-        <div onClick={toggleSideMenu} className={inputClasses.join(' ')}>
-            <span></span>
-        </div>
+        <React.Fragment>
+            <div onClick={toggleSideMenu} className={inputClasses.join(' ')}>
+                <span></span>
+            </div>
+            <div className={hiddenMenuClasses.join(' ')}>
+                <a href="#">LINK 1</a>                
+                <a href="#">LINK 2</a>                
+                <a href="#">LINK 3</a>                
+            </div>
+        </React.Fragment>
     );
 };
 
 export default SideMenu;
-
-        // <div className={classes.headerMenuWrap}>
-        //     <div className={classes.headerBurgerMenu}>
-        //     </div>
-        // </div>
