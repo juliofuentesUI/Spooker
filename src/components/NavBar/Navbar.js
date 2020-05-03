@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Navbar.module.css';
 import SideMenu from './../SideMenu/SideMenu';
+import Logo from './../../assets/logos/lycorisLogo8.png';
+import instagramLogo from './../../assets/social/instagram_logo.png';
 
 export const Navbar = () => {
     return (
@@ -18,6 +20,9 @@ export const Navbar = () => {
                 </div>
                 <div className={classes.headerNavBottom}>
                     <SideMenu />
+                    <img src={Logo} className={classes.logo} />
+                    {/* <div className={classes.emptyBox}></div> */}
+                    <img className={classes.instagramLogo} src={instagramLogo} />
                 </div>
             </header>
     );

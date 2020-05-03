@@ -20,6 +20,10 @@ body {
     height: 50px;
 }
 
+.Navbar-module__headerNavTop--eSIWl p {
+    width: 109px;
+}
+
 header button { 
     border: none;
     border-radius: 50px;
@@ -73,13 +77,21 @@ nav ul a, button {
 
 .Navbar-module__headerNavBottom--23dFK {
     height: 78px;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
-};
+    margin-top: 1%;
+    padding: 0px 10%;
+}
 
+.Navbar-module__logo--26w9E {
+    height: 100%;
+}
 
+.Navbar-module__instagramLogo--2xewN {
+    height: 50px;
+    width: 50px;
+}
 
 .SideMenu-module__test--2LrSn {
     background: #FFF;
@@ -89,13 +101,12 @@ nav ul a, button {
 
 .SideMenu-module__headerMenuWrap--4qWTE {
     position: relative;
-    left: 20px;
-    /* left: 10%; */
     width: 50px;
     height: 50px;
     background: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 .SideMenu-module__headerMenuWrap--4qWTE span,
@@ -143,15 +154,16 @@ nav ul a, button {
 .SideMenu-module__menu--1IelS {
     position: fixed;
     top: 0;
-    left: -30%;
+    left: -100%;
     color: green;
-    background: red;
+    background: white;
     height: 100%;
     width: 30%;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 100px;
     transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -162,9 +174,10 @@ nav ul a, button {
 
 
 .SideMenu-module__menu--1IelS a {
-    font-size: 1.4rem;
+    font-size: 14px;
     margin-bottom: 1rem;
     text-decoration: none;
+    color: black;
 }
 .Footer-module__FooterParent--12MWC {
     text-align: center;

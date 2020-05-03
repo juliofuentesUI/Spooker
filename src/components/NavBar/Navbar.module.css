@@ -8,6 +8,10 @@
     height: 50px;
 }
 
+.headerNavTop p {
+    width: 109px;
+}
+
 header button { 
     border: none;
     border-radius: 50px;
@@ -61,9 +65,18 @@ nav ul a, button {
 
 .headerNavBottom {
     height: 78px;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
-};
+    margin-top: 1%;
+    padding: 0px 10%;
+}
 
+.logo {
+    height: 100%;
+}
+
+.instagramLogo {
+    height: 50px;
+    width: 50px;
+}
