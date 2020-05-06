@@ -21,7 +21,6 @@ export const Navbar = () => {
                 <div className={classes.headerNavBottom}>
                     <SideMenu />
                     <img src={Logo} className={classes.logo} />
-                    {/* <div className={classes.emptyBox}></div> */}
                     <img className={classes.instagramLogo} src={instagramLogo} />
                 </div>
             </header>
