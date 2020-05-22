@@ -1,5 +1,5 @@
 .emptyClass {
-
+    width: 100%;
 }
 
 
@@ -17,8 +17,7 @@
     height: 100%;
     will-change: transform;
     border: 5px solid blue;
-};
-
+}
 
 .sampleCard {
     position: relative;
