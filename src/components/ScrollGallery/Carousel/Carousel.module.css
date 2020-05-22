@@ -1,0 +1,6 @@
+.carousel {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+    border: 5px solid blue;
+};

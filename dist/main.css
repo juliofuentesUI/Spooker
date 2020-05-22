@@ -203,6 +203,18 @@ nav ul a, button {
     display: flex;
     flex-wrap: wrap;
 }
+.Carousel-module__carousel--Pagx1 {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+    border: 5px solid blue;
+};
+
+.ScrollGallery-module__emptyClass--2cbGo {
+
+}
+
+
 .ScrollGallery-module__stickyContainer--1jLSx {
     position: sticky;
     top: 0px;
@@ -216,9 +228,15 @@ nav ul a, button {
     position: absolute;
     height: 100%;
     will-change: transform;
+    border: 5px solid blue;
+};
+
+
+.ScrollGallery-module__sampleCard--XNirl {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    margin-right: 50px;
 }
 
-
-.ScrollGallery-module__tallOuterContainer--CVcby {
-
-}

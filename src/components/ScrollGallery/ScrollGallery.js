@@ -1,9 +1,10 @@
 import React , { useEffect, useState, useRef } from 'react';
+import Carousel from './Carousel/Carousel';
 import classes from './ScrollGallery.module.css';
 
 const ScrollGallery = (props) => {
 
-    const [dynamicHeight, setDynamicHeight] = useState(null);
+    const [dynamicHeight, setDynamicHeight] = useState(2000);
     const [translateX, setTranslateX] = useState(0);
 
     const containerRef = useRef(null);
@@ -37,9 +38,19 @@ const ScrollGallery = (props) => {
         transform: `translateX(${translateX})`
     };
 
+    const tallOuterStyle = {
+        height: `${dynamicHeight}px`
+    };
+    
+    const SampleCards = React.memo(() => {
+        return Array(5).fill(0).map((element, index) => {
+            return <div className={classes.sampleCard} key={`sampleCard-${index}`}></div>
+        });
+    })
 
     useEffect(() => {
-        handleDynamicHeight(carouselRef);
+        // using fixedDynamicHeight by setting  state to 2000px for testing.
+        // handleDynamicHeight(carouselRef);
         window.addEventListener('resize', resizeHandler);
         applyScrollListener(containerRef);
     }, []);
@@ -47,7 +58,9 @@ const ScrollGallery = (props) => {
     return (
         <div style={tallOuterStyle}>
             <div className={classes.stickyContainer} ref={containerRef}>
-                <div className={classes.carousel} ref={carouselRef} style={horizontalCarouselStyle}>
+                <div className={classes.carousel} ref={carouselRef} style={horizontalCarouselStyle} >
+                    {/* picture cards go here */}
+                    <div className={classes.sampleCard}></div>
                 </div>
             </div>
         </div>
