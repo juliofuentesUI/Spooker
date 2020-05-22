@@ -62,7 +62,12 @@ const ScrollGallery = (props) => {
             <div className={classes.stickyContainer} ref={containerRef}>
                 <div className={classes.carousel} ref={carouselRef} style={horizontalCarouselStyle} >
                     {/* picture cards go here */}
-                    <div className={classes.sampleCard}></div>
+                    <div className={classes.cardContainer}>
+                        <div className={classes.sampleCard}></div>
+                        <div className={classes.sampleCard}></div>
+                        <div className={classes.sampleCard}></div>
+                        <div className={classes.sampleCard}></div>
+                    </div>
                 </div>
             </div>
         </div>

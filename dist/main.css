@@ -224,6 +224,13 @@ nav ul a, button {
     border: 5px solid blue;
 }
 
+.ScrollGallery-module__cardContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .ScrollGallery-module__sampleCard {
     position: relative;
     height: 300px;

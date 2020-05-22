@@ -19,6 +19,13 @@
     border: 5px solid blue;
 }
 
+.cardContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .sampleCard {
     position: relative;
     height: 300px;
