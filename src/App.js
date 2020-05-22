@@ -3,6 +3,7 @@ import classes from './GlobalStyles.css';
 import Layout from './hoc/Layout/Layout';
 import { Switch, Route } from 'react-router-dom';
 import Shop from './containers/Shop/Shop';
+import ScrollGallery from './components/ScrollGallery/ScrollGallery';
 
 class App extends Component {
 
@@ -22,6 +23,7 @@ class App extends Component {
         return (
             <div>
                 <Layout>
+                    <ScrollGallery />
                     {routes}
                     {/* routes will be rendered here, but despite what routes load
                     ill always want the navbar , so put the navbar INSIDE layout.  */}
