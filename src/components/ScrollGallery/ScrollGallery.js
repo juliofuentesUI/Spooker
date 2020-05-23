@@ -3,9 +3,7 @@ import classes from './ScrollGallery.module.css';
 
 const ScrollGallery = (props) => {
 
-    console.log('classes.sampleCard', classes.sampleCard);
-    
-    const [dynamicHeight, setDynamicHeight] = useState(2000);
+    const [dynamicHeight, setDynamicHeight] = useState(0);
     const [translateX, setTranslateX] = useState(0);
 
     const containerRef = useRef(null);
@@ -20,6 +18,7 @@ const ScrollGallery = (props) => {
 
     const handleDynamicHeight = (ref) => {
         const objectWidth = ref.current.scrollWidth;
+        console.log(`scrollWidth of carousel is ${objectWidth}`);
         const dynamicHeight = calcDynamicHeight(objectWidth);
         setDynamicHeight(dynamicHeight);
     };
@@ -27,7 +26,10 @@ const ScrollGallery = (props) => {
     const applyScrollListener = (ref) => {
         window.addEventListener('scroll', () => {
             const offsetTop = -ref.current.offsetTop;
+            console.log(`offsettop of stickyContainer: ${offsetTop}`);
+            // console.log(`translateX state value before : ${translateX}`);
             setTranslateX(offsetTop);
+            // console.log(`translateX state value after : ${translateX}`);
         });
     };
 
@@ -36,23 +38,20 @@ const ScrollGallery = (props) => {
     };
 
     const horizontalCarouselStyle = {
-        transform: `translateX(${translateX})`
+        transform: `translateX(${translateX}px)`
     };
 
     const tallOuterStyle = {
         height: `${dynamicHeight}px`
     };
     
-    // const SampleCards = React.memo(() => {
-    //     return Array(5).fill(0).map((element, index) => {
-    //         return <div className={classes.sampleCard} key={`sampleCard-${index}`}></div>
-    //     });
-    // })
+    const SampleCards = Array(5).fill(0).map((element, index) => {
+        return <div className={classes.sampleCard} key={`sampleCard-${index}`} ></div>;
+    });
 
     useEffect(() => {
         // using fixedDynamicHeight by setting  state to 2000px for testing.
-        // handleDynamicHeight(carouselRef);
-        // random comment
+        handleDynamicHeight(carouselRef);
         window.addEventListener('resize', resizeHandler);
         applyScrollListener(containerRef);
     }, []);
@@ -63,10 +62,7 @@ const ScrollGallery = (props) => {
                 <div className={classes.carousel} ref={carouselRef} style={horizontalCarouselStyle} >
                     {/* picture cards go here */}
                     <div className={classes.cardContainer}>
-                        <div className={classes.sampleCard}></div>
-                        <div className={classes.sampleCard}></div>
-                        <div className={classes.sampleCard}></div>
-                        <div className={classes.sampleCard}></div>
+                        {SampleCards}
                     </div>
                 </div>
             </div>

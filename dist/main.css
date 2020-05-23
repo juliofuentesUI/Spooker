@@ -229,6 +229,7 @@ nav ul a, button {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    border: 5px solid black;
 }
 
 .ScrollGallery-module__sampleCard {
