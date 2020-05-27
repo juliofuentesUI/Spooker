@@ -230,12 +230,13 @@ nav ul a, button {
     justify-content: flex-start;
     align-items: center;
     border: 5px solid black;
+    height: 100%;
 }
 
 .ScrollGallery-module__sampleCard {
     position: relative;
     height: 300px;
-    width: 300px;
+    width: 500px;
     background-color: green;
     margin-right: 50px;
 }

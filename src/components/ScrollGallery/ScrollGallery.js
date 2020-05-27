@@ -13,7 +13,12 @@ const ScrollGallery = (props) => {
     const calcDynamicHeight = objectWidth => {
         const vw = window.innerWidth;
         const vh = window.innerHeight;
-        return objectWidth - vw + vh + 150;
+        console.log('objectWidth is ', objectWidth);
+        console.log('innerWidth is ', vw);
+        console.log('innerHeight is ', vh);
+        console.log('objectWidth - vw + vh + 150 is ', objectWidth - vw + vh + 350);
+        console.log('dynamicHeight');
+        return objectWidth - vw + vh + 650;
     };
 
     const handleDynamicHeight = (ref) => {
