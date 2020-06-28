@@ -4,6 +4,7 @@ import Layout from './hoc/Layout/Layout';
 import { Switch, Route } from 'react-router-dom';
 import Shop from './containers/Shop/Shop';
 import ScrollGallery from './components/ScrollGallery/ScrollGallery';
+import FloatGallery from './components/FloatGallery/FloatGallery';
 
 class App extends Component {
 
@@ -23,6 +24,7 @@ class App extends Component {
         return (
             <div>
                 <Layout>
+                    <FloatGallery />
                     <ScrollGallery />
                     {routes}
                     {/* routes will be rendered here, but despite what routes load

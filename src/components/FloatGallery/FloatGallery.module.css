@@ -1,0 +1,19 @@
+
+
+.samplePictures {
+    width: 300px;
+    height: 300px;
+    border: 2px solid green;
+}
+
+.floatGallery {
+    border: 5px solid yellow;
+    display: flex;
+    flex-direction: row;
+}
+
+.galleryParent {
+    display: flex;
+    border: 5px solid yellow;
+    flex-direction: row;
+}
