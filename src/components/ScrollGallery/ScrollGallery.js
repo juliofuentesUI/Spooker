@@ -29,11 +29,17 @@ const ScrollGallery = (props) => {
     };
 
     const applyScrollListener = (ref) => {
+        const initialOffset = -ref.current.offsetTop;
         window.addEventListener('scroll', () => {
             const offsetTop = -ref.current.offsetTop;
             console.log(`offsettop of stickyContainer: ${offsetTop}`);
+            if (offsetTop < initialOffset) {
+                //if initial offset was -459px, this would mean offsetTop is now -460px
+                let difference = Math.abs(offsetTop - initialOffset);
+                setTranslateX(-difference);
+            }
             // console.log(`translateX state value before : ${translateX}`);
-            setTranslateX(offsetTop);
+            // setTranslateX(offsetTop);
             // console.log(`translateX state value after : ${translateX}`);
         });
     };

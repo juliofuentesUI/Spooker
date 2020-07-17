@@ -253,6 +253,7 @@ nav ul a, button {
     border: 5px solid yellow;
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 
 .FloatGallery-module__galleryParent {
