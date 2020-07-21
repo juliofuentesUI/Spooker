@@ -65,5 +65,31 @@
             },
             "imageUrl": "/images/boots5.jpg"
         }
+    ],
+    "models_gallery1": [{
+        "id": "1",
+        "gender": "female",
+        "imageUrl": "/images/models/model1.jpg"
+    },
+    {
+        "id": "2",
+        "gender": "female",
+        "imageUrl": "/images/models/model2.jpg"
+    },
+    {
+        "id": "3",
+        "gender": "female",
+        "imageUrl": "/images/models/model3.jpg"
+    },
+    {
+        "id": "4",
+        "gender": "female",
+        "imageUrl": "/images/models/model4.jpg"
+    },
+    {
+        "id": "5",
+        "gender": "female",
+        "imageUrl": "/images/models/model5.jpg"
+    }
     ]
 }

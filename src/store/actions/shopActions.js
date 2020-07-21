@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
 
-export const initProducts = (currentClothes) => {
+export const initProducts = () => {
     console.log('Init Products Executed');
     return (dispatch) => {
         fetch('http://localhost:8080/featuredClothes')

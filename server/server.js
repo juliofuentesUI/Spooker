@@ -17,4 +17,8 @@ app.get('/featuredClothes', (req, res) => {
     res.status(200).send(MOCK_DATA); 
 });
 
+app.get('/floatGalleryModels', (req, res) => {
+    // res.status(200).send();
+});
+
 app.listen(PORT, () => console.log(`Running on port ${PORT}`));

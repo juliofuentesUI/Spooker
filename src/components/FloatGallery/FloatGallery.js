@@ -4,7 +4,6 @@ import classes from './FloatGallery.module.css';
 
 const FloatGallery = () => {
 
-
     const SamplePictures = Array(5).fill(0).map((element, index) => {
         return <div className={classes.samplePictures} key={`samplePicture-${index}`}></div>
     });
