@@ -10,7 +10,6 @@ const Shop = (props) => {
 
     console.log('VALUE OF CLOTHES IS', allProducts);
 
-
     useEffect(() => {
         dispatch(actions.initProducts());
     }, []);

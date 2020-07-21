@@ -1,7 +1,8 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    allProducts: null
+    allProducts: null,
+    modelsFloatGallery: null
 }
 
 const setClothes = (state, action) => {
@@ -12,9 +13,18 @@ const setClothes = (state, action) => {
     }
 };
 
+const setFloatGallery = (state, action) => {
+    console.log('FLOAT GALLERY ACTION IS', action);
+    return {
+        ...state,
+        modelsFloatGallery: action.modelFloatGalleryImages
+    }
+};
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.SET_CLOTHES: return setClothes(state, action);
+        case actionTypes.SET_FLOAT_GALLERY_MODELS: return setFloatGallery(state, action);
         default: return state;
     }
 };
