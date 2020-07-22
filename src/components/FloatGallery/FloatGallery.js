@@ -15,13 +15,23 @@ const FloatGallery = () => {
         dispatch(actions.initFloatGallery());
     }, [])
 
-    const SamplePictures = Array(5).fill(0).map((element, index) => {
-        return <div className={classes.samplePictures} key={`samplePicture-${index}`}></div>
-    });
+    let floatGallery;
+
+    if (floatModelImages) {
+        floatGallery = floatModelImages.map((model, index) => {
+            return <img className={classes.samplePictures} src={model.imageUrl} />;
+        });
+    } else {
+        floatGallery = <p>Loading...</p>
+    }
+    // const SamplePictures = Array(5).fill(0).map((element, index) => {
+    //     return <div className={classes.samplePictures} key={`samplePicture-${index}`}></div>
+    // });
 
     return (
         <section className={classes.floatGallery}>
-            {SamplePictures}
+            {/* {SamplePictures} */}
+            {floatGallery}
         </section>
     );
 };
