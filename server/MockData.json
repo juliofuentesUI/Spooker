@@ -90,6 +90,11 @@
         "id": "5",
         "gender": "female",
         "imageUrl": "/images/models/model5.jpg"
+    },
+    {
+        "id": "6",
+        "gender": "female",
+        "imageUrl": "/images/models/model6.jpg"
     }
     ]
 }
