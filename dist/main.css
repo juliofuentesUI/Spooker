@@ -166,6 +166,7 @@ nav ul a, button {
     align-items: center;
     padding: 100px;
     transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 3;
 }
 
 .SideMenu-module__menu.SideMenu-module__active {
@@ -247,12 +248,12 @@ nav ul a, button {
     /* width: 300px;
     height: 300px; */
     /* height: auto; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .FloatGallery-module__floatGallery {
     height: 100vh;
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -264,6 +265,9 @@ nav ul a, button {
     position: relative;
     animation: FloatGallery-module__horizontal 1.0s ease-in-out infinite alternate;
     max-height: 350px;
+    max-width: 405px;
+    left: 10vw;
+    box-shadow: 5px 5px 5px #888;
 }
 
 .FloatGallery-module__floatGallery img:nth-child(1) {
@@ -275,23 +279,24 @@ nav ul a, button {
 .FloatGallery-module__floatGallery img:nth-child(2) {
     animation-delay: 3s;
     top: 5vh;
+    left: 12vw;
 }
 
 .FloatGallery-module__floatGallery img:nth-child(3) {
     animation-delay: 2s;
-    left: 3vw;
     top: 11vh;
+    left: 14vw;
 }
 
 .FloatGallery-module__floatGallery img:nth-child(4) {
     animation-delay: 7s;
-    left: 10vw;
+    top: 5vh;
 }
 
 .FloatGallery-module__floatGallery img:nth-child(5) {
     animation-delay: 1s;
-    left: 5vw;
     top: -5vh;
+    left: 11vw;
 }
 
 .FloatGallery-module__floatGallery img:nth-child(6) {
