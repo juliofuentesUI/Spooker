@@ -267,7 +267,7 @@ nav ul a, button {
     max-height: 350px;
     max-width: 405px;
     left: 10vw;
-    box-shadow: 5px 5px 5px #888;
+    box-shadow: 25px 5px 5px #888;
 }
 
 .FloatGallery-module__floatGallery img:nth-child(1) {
@@ -311,6 +311,17 @@ nav ul a, button {
 
     100% {
         transform: translateX(3px);
+    }
+}
+
+
+@keyframes FloatGallery-module__boxShadowColor {
+    0% {
+        box-shadow: 25px 5px 5px #888;
+    }
+
+    100% {
+        box-shadow: 25px 5px 5px  #b99898;
     }
 }
 

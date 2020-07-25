@@ -14,7 +14,7 @@ module.exports = {
             template: `${__dirname}/src/template.html`,
             filename: 'index.html',
             minify: false,
-            favicon: './src/assets/favicon/favicon3.ico'
+            favicon: './src/assets/favicon/lycorisIco.ico'
         }),
         new MiniCssExtractPlugin()
     ],
