@@ -28,10 +28,22 @@
     height: 100%;
 }
 
+
 .sampleCard {
     position: relative;
     height: 300px;
     width: 500px;
     background-color: green;
+    margin-right: 50px;
+}
+
+.cardContainer li {
+    list-style: none;
+}
+
+.modelPictures {
+    position: relative;
+    height: 300px;
+    width: 500px;
     margin-right: 50px;
 }

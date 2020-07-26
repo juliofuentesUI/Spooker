@@ -234,11 +234,23 @@ nav ul a, button {
     height: 100%;
 }
 
+
 .ScrollGallery-module__sampleCard {
     position: relative;
     height: 300px;
     width: 500px;
     background-color: green;
+    margin-right: 50px;
+}
+
+.ScrollGallery-module__cardContainer li {
+    list-style: none;
+}
+
+.ScrollGallery-module__modelPictures {
+    position: relative;
+    height: 300px;
+    width: 500px;
     margin-right: 50px;
 }
 

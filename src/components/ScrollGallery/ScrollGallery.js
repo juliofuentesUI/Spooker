@@ -1,10 +1,16 @@
 import React , { useEffect, useState, useRef } from 'react';
 import classes from './ScrollGallery.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import * as actions from './../../store/actions/index';
 
 const ScrollGallery = (props) => {
 
+    const testValue = 'testing render';
     const [dynamicHeight, setDynamicHeight] = useState(0);
     const [translateX, setTranslateX] = useState(0);
+
+    const floatModelImages = useSelector(state => state.modelsFloatGallery);
+    const dispatch = useDispatch();
 
     const containerRef = useRef(null);
     const carouselRef = useRef(null);
@@ -13,11 +19,10 @@ const ScrollGallery = (props) => {
     const calcDynamicHeight = objectWidth => {
         const vw = window.innerWidth;
         const vh = window.innerHeight;
-        console.log('objectWidth is ', objectWidth);
-        console.log('innerWidth is ', vw);
-        console.log('innerHeight is ', vh);
-        console.log('objectWidth - vw + vh + 150 is ', objectWidth - vw + vh + 350);
-        console.log('dynamicHeight');
+        // console.log('objectWidth is ', objectWidth);
+        // console.log('innerWidth is ', vw);
+        // console.log('innerHeight is ', vh);
+        // console.log('objectWidth - vw + vh + 150 is ', objectWidth - vw + vh + 350);
         return objectWidth - vw + vh + 650;
     };
 
@@ -56,24 +61,46 @@ const ScrollGallery = (props) => {
         height: `${dynamicHeight}px`
     };
     
-    const SampleCards = Array(5).fill(0).map((element, index) => {
-        return <div className={classes.sampleCard} key={`sampleCard-${index}`} ></div>;
-    });
+    // const SampleCards = Array(5).fill(0).map((element, index) => {
+    //     return <div className={classes.sampleCard} key={`sampleCard-${index}`} ></div>;
+    // });
+
+    
 
     useEffect(() => {
         // using fixedDynamicHeight by setting  state to 2000px for testing.
-        handleDynamicHeight(carouselRef);
+        dispatch(actions.initFloatGallery());
         window.addEventListener('resize', resizeHandler);
         applyScrollListener(containerRef);
     }, []);
+
+    useEffect(() => {
+        if (floatModelImages !== null) {
+            handleDynamicHeight(carouselRef);
+            console.log('HANDLE-DYNAMIC Line 81');
+        }
+    }, [floatModelImages]);
+
+    let floatGallery;
+
+    if (floatModelImages) {
+        floatGallery = floatModelImages.map((model, index) => {
+            return (
+                <li key={`${model}-${index}`}>
+                    <img className={classes.modelPictures}  src={model.imageUrl}></img>
+                </li>
+            )
+        });
+    } else {
+        floatGallery = <p>LOADING.....</p>
+    }
 
     return (
         <div style={tallOuterStyle}>
             <div className={classes.stickyContainer} ref={containerRef}>
                 <div className={classes.carousel} ref={carouselRef} style={horizontalCarouselStyle} >
-                    {/* picture cards go here */}
                     <div className={classes.cardContainer}>
-                        {SampleCards}
+                        {floatGallery}
                     </div>
                 </div>
             </div>

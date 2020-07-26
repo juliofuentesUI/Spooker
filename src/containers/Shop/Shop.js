@@ -8,7 +8,6 @@ const Shop = (props) => {
     const allProducts = useSelector(state => state.allProducts);
     const dispatch = useDispatch();
 
-    console.log('VALUE OF CLOTHES IS', allProducts);
 
     useEffect(() => {
         dispatch(actions.initProducts());

@@ -6,7 +6,6 @@ const initialState = {
 }
 
 const setClothes = (state, action) => {
-    console.log('THE ACTION WE GOT IS ', action);
     return {
         ...state,
         allProducts: action.clothes
@@ -14,7 +13,6 @@ const setClothes = (state, action) => {
 };
 
 const setFloatGallery = (state, action) => {
-    console.log('FLOAT GALLERY ACTION IS', action);
     return {
         ...state,
         modelsFloatGallery: action.modelFloatGalleryImages
