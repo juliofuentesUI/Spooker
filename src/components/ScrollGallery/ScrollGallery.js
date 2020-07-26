@@ -60,12 +60,9 @@ const ScrollGallery = (props) => {
     const tallOuterStyle = {
         height: `${dynamicHeight}px`
     };
-    
     // const SampleCards = Array(5).fill(0).map((element, index) => {
     //     return <div className={classes.sampleCard} key={`sampleCard-${index}`} ></div>;
     // });
-
-    
 
     useEffect(() => {
         // using fixedDynamicHeight by setting  state to 2000px for testing.
