@@ -19,9 +19,9 @@ const ScrollGallery = (props) => {
     const calcDynamicHeight = objectWidth => {
         const vw = window.innerWidth;
         const vh = window.innerHeight;
-        // console.log('objectWidth is ', objectWidth);
-        // console.log('innerWidth is ', vw);
-        // console.log('innerHeight is ', vh);
+        console.log('objectWidth is ', objectWidth);
+        console.log('innerWidth is ', vw);
+        console.log('innerHeight is ', vh);
         // console.log('objectWidth - vw + vh + 150 is ', objectWidth - vw + vh + 350);
         return objectWidth - vw + vh + 650;
     };
@@ -65,7 +65,6 @@ const ScrollGallery = (props) => {
     // });
 
     useEffect(() => {
-        // using fixedDynamicHeight by setting  state to 2000px for testing.
         dispatch(actions.initFloatGallery());
         window.addEventListener('resize', resizeHandler);
         applyScrollListener(containerRef);

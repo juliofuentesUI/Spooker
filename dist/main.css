@@ -252,6 +252,7 @@ nav ul a, button {
     height: 300px;
     width: 500px;
     margin-right: 50px;
+    box-shadow: 25px 5px 5px #888;
 }
 
 
