@@ -94,7 +94,7 @@ const ScrollGallery = (props) => {
     return (
         <div style={tallOuterStyle}>
             <div className={classes.stickyContainer} ref={containerRef}>
-                <div className={classes.carousel} ref={carouselRef} style={horizontalCarouselStyle} >
+                <div className={[classes.carousel, classes.floatMode].join(' ')} ref={carouselRef} style={horizontalCarouselStyle} >
                     <div className={classes.cardContainer}>
                         {floatGallery}
                     </div>

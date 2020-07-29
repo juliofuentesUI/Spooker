@@ -263,49 +263,49 @@ nav ul a, button {
 
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(1) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(1) img {
     /* position: absolute;
     top: 3vw;
     left: 0; */
     width: 15vw;  
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(2) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(2) img {
     /* position: absolute;
     top: 1vw;
     left: 0; */
     width: 15vw;  
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(3) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(3) img {
     /* position: absolute;
     top: 1vw;
     left: 0; */
     width: 15vw;  
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(4) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(4) img {
     /* position: absolute;
     top: 1vw;
     left: 0; */
     width: 15vw;  
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(5) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(5) img {
     /* position: absolute;
     top: 1vw;
     left: 0; */
     width: 15vw;  
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(6) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(6) img {
     /* position: absolute;
     top: 1vw;
     left: 0; */
     width: 15vw;  
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li:nth-child(7) img {
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) img {
     /* position: absolute;
     top: 1vw;
     left: 0; */
