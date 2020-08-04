@@ -259,8 +259,8 @@ nav ul a, button {
 
 }
 
-.ScrollGallery-module__carousel .ScrollGallery-module__floatMode li img {
-
+.ScrollGallery-module__carousel li img {
+    transition: all 1s ease;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(1) img {

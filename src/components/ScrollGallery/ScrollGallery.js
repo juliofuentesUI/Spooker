@@ -5,9 +5,17 @@ import * as actions from './../../store/actions/index';
 
 const ScrollGallery = (props) => {
 
-    const testValue = 'testing render';
     const [dynamicHeight, setDynamicHeight] = useState(0);
     const [translateX, setTranslateX] = useState(0);
+    const [isFloatMode, setFloatMode] = useState(false);
+
+    let carouselClasses;
+
+    if (isFloatMode) {
+        carouselClasses = [classes.carousel, classes.floatMode];
+    } else {
+        carouselClasses = [classes.carousel];
+    }
 
     const floatModelImages = useSelector(state => state.modelsFloatGallery);
     const dispatch = useDispatch();
@@ -60,9 +68,6 @@ const ScrollGallery = (props) => {
     const tallOuterStyle = {
         height: `${dynamicHeight}px`
     };
-    // const SampleCards = Array(5).fill(0).map((element, index) => {
-    //     return <div className={classes.sampleCard} key={`sampleCard-${index}`} ></div>;
-    // });
 
     useEffect(() => {
         dispatch(actions.initFloatGallery());
@@ -71,14 +76,18 @@ const ScrollGallery = (props) => {
     }, []);
 
     useEffect(() => {
+        console.log('WHO RUNS 1ST, line 73 or');
         if (floatModelImages !== null) {
+            console.log('I AM LINE 74 THO');
             handleDynamicHeight(carouselRef);
-            console.log('HANDLE-DYNAMIC Line 81');
+            setFloatMode(true);
+            // after dynamicHeight is set to 3800px or so 
+            // find out if this is async. Now find best way to toggle className.
+            console.log('carouselClasses value is now', carouselClasses);
         }
     }, [floatModelImages]);
 
     let floatGallery;
-
     if (floatModelImages) {
         floatGallery = floatModelImages.map((model, index) => {
             return (
@@ -88,13 +97,13 @@ const ScrollGallery = (props) => {
             )
         });
     } else {
-        floatGallery = <p>LOADING.....</p>
+        floatGallery = <p>LOADING...</p>
     }
 
     return (
         <div style={tallOuterStyle}>
             <div className={classes.stickyContainer} ref={containerRef}>
-                <div className={[classes.carousel, classes.floatMode].join(' ')} ref={carouselRef} style={horizontalCarouselStyle} >
+                <div className={carouselClasses.join(' ')} ref={carouselRef} style={horizontalCarouselStyle} >
                     <div className={classes.cardContainer}>
                         {floatGallery}
                     </div>

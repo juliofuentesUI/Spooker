@@ -53,8 +53,8 @@
 
 }
 
-.carousel .floatMode li img {
-
+.carousel li img {
+    transition: all 1s ease;
 }
 
 .carousel.floatMode li:nth-child(1) img {
