@@ -16,6 +16,7 @@ const ScrollGallery = (props) => {
     } else {
         carouselClasses = [classes.carousel];
     }
+    console.log('isFloatMode', isFloatMode);
 
     const floatModelImages = useSelector(state => state.modelsFloatGallery);
     const dispatch = useDispatch();
@@ -41,13 +42,21 @@ const ScrollGallery = (props) => {
         setDynamicHeight(dynamicHeight);
     };
 
+    const checkIsFloatMode = () => {
+        return isFloatMode ? true : false;
+    };
+
     const applyScrollListener = (ref) => {
         const initialOffset = -ref.current.offsetTop;
         window.addEventListener('scroll', () => {
             const offsetTop = -ref.current.offsetTop;
             console.log(`offsettop of stickyContainer: ${offsetTop}`);
             if (offsetTop < initialOffset) {
-                //if initial offset was -459px, this would mean offsetTop is now -460px
+                if (checkIsFloatMode()) {
+                    console.log('isFloatMode is what', isFloatMode);
+                    setFloatMode(false);
+                }
+
                 let difference = Math.abs(offsetTop - initialOffset);
                 setTranslateX(-difference);
             }
@@ -70,6 +79,8 @@ const ScrollGallery = (props) => {
         dispatch(actions.initFloatGallery());
         window.addEventListener('resize', resizeHandler);
         applyScrollListener(containerRef);
+        // REMOVE SCROLL-LISTENER if this component UNMOUNTS in the future. 
+        // The unmounting work is done via a return () => //callback function inside useEffect
     }, []);
 
     useEffect(() => {
