@@ -51,9 +51,6 @@ const ScrollGallery = (props) => {
                 let difference = Math.abs(offsetTop - initialOffset);
                 setTranslateX(-difference);
             }
-            // console.log(`translateX state value before : ${translateX}`);
-            // setTranslateX(offsetTop);
-            // console.log(`translateX state value after : ${translateX}`);
         });
     };
 
@@ -76,14 +73,9 @@ const ScrollGallery = (props) => {
     }, []);
 
     useEffect(() => {
-        console.log('WHO RUNS 1ST, line 73 or');
         if (floatModelImages !== null) {
-            console.log('I AM LINE 74 THO');
             handleDynamicHeight(carouselRef);
             setFloatMode(true);
-            // after dynamicHeight is set to 3800px or so 
-            // find out if this is async. Now find best way to toggle className.
-            console.log('carouselClasses value is now', carouselClasses);
         }
     }, [floatModelImages]);
 
