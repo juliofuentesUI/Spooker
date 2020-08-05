@@ -42,9 +42,6 @@ const ScrollGallery = (props) => {
         setDynamicHeight(dynamicHeight);
     };
 
-    const checkIsFloatMode = () => {
-        return isFloatMode ? true : false;
-    };
 
     const applyScrollListener = (ref) => {
         const initialOffset = -ref.current.offsetTop;
@@ -52,11 +49,6 @@ const ScrollGallery = (props) => {
             const offsetTop = -ref.current.offsetTop;
             console.log(`offsettop of stickyContainer: ${offsetTop}`);
             if (offsetTop < initialOffset) {
-                if (checkIsFloatMode()) {
-                    console.log('isFloatMode is what', isFloatMode);
-                    setFloatMode(false);
-                }
-
                 let difference = Math.abs(offsetTop - initialOffset);
                 setTranslateX(-difference);
             }
