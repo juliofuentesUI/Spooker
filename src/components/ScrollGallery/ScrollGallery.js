@@ -52,7 +52,6 @@ const ScrollGallery = (props) => {
                 let difference = Math.abs(offsetTop - initialOffset);
                 setTranslateX(-difference);
             } else {
-                console.log('setting float mode to true, should not trigger re-render');
                 setFloatMode(true);
             }   
         });
