@@ -41,17 +41,20 @@ const ScrollGallery = (props) => {
         const dynamicHeight = calcDynamicHeight(objectWidth);
         setDynamicHeight(dynamicHeight);
     };
-
-
+    
     const applyScrollListener = (ref) => {
         const initialOffset = -ref.current.offsetTop;
         window.addEventListener('scroll', () => {
             const offsetTop = -ref.current.offsetTop;
             console.log(`offsettop of stickyContainer: ${offsetTop}`);
             if (offsetTop < initialOffset) {
+                setFloatMode(false);
                 let difference = Math.abs(offsetTop - initialOffset);
                 setTranslateX(-difference);
-            }
+            } else {
+                console.log('setting float mode to true, should not trigger re-render');
+                setFloatMode(true);
+            }   
         });
     };
 
