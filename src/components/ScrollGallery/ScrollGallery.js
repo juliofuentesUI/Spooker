@@ -16,6 +16,7 @@ const ScrollGallery = (props) => {
     } else {
         carouselClasses = [classes.carousel];
     }
+
     console.log('isFloatMode', isFloatMode);
 
     const floatModelImages = useSelector(state => state.modelsFloatGallery);

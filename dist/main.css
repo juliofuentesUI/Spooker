@@ -235,20 +235,11 @@ nav ul a, button {
 }
 
 
-.ScrollGallery-module__sampleCard {
-    position: relative;
-    height: 300px;
-    width: 500px;
-    background-color: green;
-    margin-right: 50px;
-}
-
 .ScrollGallery-module__cardContainer li {
     list-style: none;
 }
 
 .ScrollGallery-module__modelPictures {
-    position: relative;
     height: 300px;
     width: 500px;
     margin-right: 50px;
@@ -259,58 +250,206 @@ nav ul a, button {
 
 }
 
-.ScrollGallery-module__carousel li img {
+/* .carousel li img {
     transition: all 1s ease;
-}
+} */
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(1) img {
-    /* position: absolute;
-    top: 3vw;
-    left: 0; */
+    position: absolute;
+    top: 2vw;
+    left: 0;
     width: 15vw;  
+    /* transition-delay: .01s; */
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(2) img {
-    /* position: absolute;
-    top: 1vw;
-    left: 0; */
+    position: absolute;
+    top: 4vw;
+    left: 16vw;
     width: 15vw;  
+    /* transition-delay: .05s; */
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(3) img {
-    /* position: absolute;
-    top: 1vw;
-    left: 0; */
+    position: absolute;
+    top: 2vh;
+    left: 32vw;
     width: 15vw;  
+    /* transition-delay: .45s; */
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(4) img {
-    /* position: absolute;
-    top: 1vw;
-    left: 0; */
+    position: absolute;
+    top: 4vh;
+    left: 49vw;
     width: 15vw;  
+    /* transition-delay: .35s; */
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(5) img {
-    /* position: absolute;
-    top: 1vw;
-    left: 0; */
+    position: absolute;
+    top: 4vh;
+    left: 66vw;
     width: 15vw;  
+    /* transition-delay: .4s; */
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(6) img {
-    /* position: absolute;
-    top: 1vw;
-    left: 0; */
+    position: absolute;
+    top: 2vh;
+    left: 83vw;
     width: 15vw;  
+    /* transition-delay: .3s; */
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) img {
-    /* position: absolute;
-    top: 1vw;
-    left: 0; */
+    position: absolute;
+    bottom: 2vh;
+    left: 0vw;
     width: 15vw;  
+    /* transition-delay: .2s; */
 }
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(8) img {
+    position: absolute;
+    bottom: 3vh;
+    left: 18vw;
+    width: 15vw;  
+    /* transition-delay: .15s; */
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(9) img {
+    position: absolute;
+    left: 32vw;
+    bottom: 13vh;
+    width: 15vw;  
+    /* transition-delay: .1s; */
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(10) img {
+    position: absolute;
+    left: 47vw;
+    bottom: 2vh;
+    width: 15vw;  
+    /* transition-delay: .25s; */
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(11) img {
+    position: absolute;
+    left: 63vw;
+    bottom: 2vh;
+    width: 15vw;  
+    /* transition-delay: .5s; */
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(12) img {
+    position: absolute;
+    left: 83vw;
+    bottom: 3vh;
+    width: 15vw;  
+    /* transition-delay: .6s; */
+}
+
+
+/* BELOW HERE is animating the images FROM normal mode to FLOAT mode.
+the transition-delay for floatmode nth child img is for animation going horiozontal or vertical */
+
+
+/* .carousel li:nth-child(1) img {
+    position: absolute;
+    top: 2vw;
+    left: 0;
+    width: 15vw;  
+    transition-delay: .01s;
+}
+
+.carousel li:nth-child(2) img {
+    position: absolute;
+    top: 4vw;
+    left: 16vw;
+    width: 15vw;  
+    transition-delay: .05s;
+}
+
+.carousel li:nth-child(3) img {
+    position: absolute;
+    top: 2vh;
+    left: 32vw;
+    width: 15vw;  
+    transition-delay: .45s;
+}
+
+.carousel li:nth-child(4) img {
+    position: absolute;
+    top: 4vh;
+    left: 49vw;
+    width: 15vw;  
+    transition-delay: .35s;
+}
+
+.carousel li:nth-child(5) img {
+    position: absolute;
+    top: 4vh;
+    left: 66vw;
+    width: 15vw;  
+    transition-delay: .4s;
+}
+
+.carousel li:nth-child(6) img {
+    position: absolute;
+    top: 2vh;
+    left: 83vw;
+    width: 15vw;  
+    transition-delay: .3s;
+}
+
+.carousel li:nth-child(7) img {
+    position: absolute;
+    bottom: 2vh;
+    left: 0vw;
+    width: 15vw;  
+    transition-delay: .2s;
+}
+
+.carousel li:nth-child(8) img {
+    position: absolute;
+    bottom: 3vh;
+    left: 18vw;
+    width: 15vw;  
+    transition-delay: .15s;
+}
+
+.carousel li:nth-child(9) img {
+    position: absolute;
+    left: 32vw;
+    bottom: 13vh;
+    width: 15vw;  
+    transition-delay: .1s;
+}
+
+.carousel li:nth-child(10) img {
+    position: absolute;
+    left: 47vw;
+    bottom: 2vh;
+    width: 15vw;  
+    transition-delay: .25s;
+}
+
+.carousel li:nth-child(11) img {
+    position: absolute;
+    left: 63vw;
+    bottom: 2vh;
+    width: 15vw;  
+    transition-delay: .5s;
+}
+
+.carousel li:nth-child(12) img {
+    position: absolute;
+    left: 83vw;
+    bottom: 3vh;
+    width: 15vw;  
+    transition-delay: .6s;
+} */
 
 
 .FloatGallery-module__samplePictures {
