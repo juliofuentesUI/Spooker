@@ -237,6 +237,7 @@ nav ul a, button {
 
 .ScrollGallery-module__cardContainer li {
     list-style: none;
+    height: 100%;
 }
 
 .ScrollGallery-module__modelPictures {
@@ -244,6 +245,10 @@ nav ul a, button {
     width: 500px;
     margin-right: 50px;
     box-shadow: 25px 5px 5px #888;
+    position: relative;
+    top: 35%;
+    left: 0;
+    transition: all 1s ease;
 }
 
 .ScrollGallery-module__floatMode {
@@ -304,7 +309,7 @@ nav ul a, button {
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) img {
     position: absolute;
-    bottom: 2vh;
+    top: 50%;
     left: 0vw;
     width: 15vw;  
     /* transition-delay: .2s; */
@@ -312,7 +317,7 @@ nav ul a, button {
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(8) img {
     position: absolute;
-    bottom: 3vh;
+    top: 50%;
     left: 18vw;
     width: 15vw;  
     /* transition-delay: .15s; */
@@ -321,7 +326,7 @@ nav ul a, button {
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(9) img {
     position: absolute;
     left: 32vw;
-    bottom: 13vh;
+    top: 50%;
     width: 15vw;  
     /* transition-delay: .1s; */
 }
@@ -329,7 +334,7 @@ nav ul a, button {
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(10) img {
     position: absolute;
     left: 47vw;
-    bottom: 2vh;
+    top: 50%;
     width: 15vw;  
     /* transition-delay: .25s; */
 }
@@ -337,7 +342,7 @@ nav ul a, button {
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(11) img {
     position: absolute;
     left: 63vw;
-    bottom: 2vh;
+    top: 50%;
     width: 15vw;  
     /* transition-delay: .5s; */
 }
@@ -345,7 +350,7 @@ nav ul a, button {
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(12) img {
     position: absolute;
     left: 83vw;
-    bottom: 3vh;
+    top: 50%;
     width: 15vw;  
     /* transition-delay: .6s; */
 }
