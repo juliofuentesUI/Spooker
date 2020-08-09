@@ -238,6 +238,16 @@ nav ul a, button {
 .ScrollGallery-module__cardContainer li {
     list-style: none;
     height: 100%;
+    width: 100%;
+}
+
+.ScrollGallery-module__floatMode .ScrollGallery-module__cardContainer li {
+    list-style: none;
+    height: 100%;
+    position: relative;
+    border: 2px solid red;
+    width: 33vw;
+    display: block;
 }
 
 .ScrollGallery-module__modelPictures {
@@ -246,7 +256,7 @@ nav ul a, button {
     margin-right: 50px;
     box-shadow: 25px 5px 5px #888;
     position: relative;
-    top: 30%;
+    top: 35%;
     left: 0;
     transition: all 1s ease;
 }
@@ -264,95 +274,95 @@ nav ul a, button {
     top: 2vw;
     left: 0;
     width: 15vw;  
-    /* transition-delay: .01s; */
+    transition-delay: .01s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(2) img {
     position: absolute;
     top: 4vw;
-    left: 16vw;
+    left: -17vw;
     width: 15vw;  
-    /* transition-delay: .05s; */
+    transition-delay: .05s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(3) img {
     position: absolute;
     top: 2vh;
-    left: 32vw;
+    left: -32vw;
     width: 15vw;  
-    /* transition-delay: .45s; */
+    transition-delay: .1s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(4) img {
     position: absolute;
     top: 4vh;
-    left: 49vw;
+    left: -48vw;
     width: 15vw;  
-    /* transition-delay: .35s; */
+    transition-delay: .15s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(5) img {
     position: absolute;
-    top: 4vh;
-    left: 66vw;
+    top: 6vh;
+    left: -65vw;
     width: 15vw;  
-    /* transition-delay: .4s; */
+    transition-delay: .2s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(6) img {
     position: absolute;
     top: 2vh;
-    left: 83vw;
+    left: -82vw;
     width: 15vw;  
-    /* transition-delay: .3s; */
+    transition-delay: .25s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) img {
     position: absolute;
     top: 50%;
-    left: 0vw;
+    left: -197vw;
     width: 15vw;  
-    /* transition-delay: .2s; */
+    transition-delay: .3s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(8) img {
     position: absolute;
     top: 50%;
-    left: 18vw;
+    left: -213vw;
     width: 15vw;  
-    /* transition-delay: .15s; */
+    transition-delay: .35s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(9) img {
     position: absolute;
-    left: 32vw;
-    top: 50%;
+    left: -229vw;
+    top: 52%;
     width: 15vw;  
-    /* transition-delay: .1s; */
+    transition-delay: .4s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(10) img {
     position: absolute;
-    left: 47vw;
+    left: -245vw;
     top: 50%;
     width: 15vw;  
-    /* transition-delay: .25s; */
+    transition-delay: .45s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(11) img {
     position: absolute;
-    left: 63vw;
+    left: -262vw;
     top: 50%;
     width: 15vw;  
-    /* transition-delay: .5s; */
+    transition-delay: .5s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(12) img {
     position: absolute;
-    left: 83vw;
+    left: -280vw;
     top: 50%;
     width: 15vw;  
-    /* transition-delay: .6s; */
+    transition-delay: .6s;
 }
 
 
