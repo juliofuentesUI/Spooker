@@ -250,13 +250,24 @@ nav ul a, button {
     display: block;
 }
 
-.ScrollGallery-module__modelPictures {
+.ScrollGallery-module__floatMode .ScrollGallery-module__modelPictures {
     height: 300px;
     width: 500px;
     margin-right: 50px;
     box-shadow: 25px 5px 5px #888;
     position: relative;
     top: 35%;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.ScrollGallery-module__modelPictures {
+    height: 100%;
+    width: 500px;
+    margin-right: 50px;
+    box-shadow: 25px 5px 5px #888;
+    position: relative;
+    top: 0;
     left: 0;
     transition: all 1s ease;
 }
@@ -290,7 +301,7 @@ nav ul a, button {
     top: 2vh;
     left: -32vw;
     width: 15vw;  
-    transition-delay: .1s;
+    transition-delay: .15s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(4) img {
@@ -298,7 +309,7 @@ nav ul a, button {
     top: 4vh;
     left: -48vw;
     width: 15vw;  
-    transition-delay: .15s;
+    transition-delay: .35s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(5) img {
@@ -306,7 +317,7 @@ nav ul a, button {
     top: 6vh;
     left: -65vw;
     width: 15vw;  
-    transition-delay: .2s;
+    transition-delay: .4s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(6) img {
@@ -314,7 +325,7 @@ nav ul a, button {
     top: 2vh;
     left: -82vw;
     width: 15vw;  
-    transition-delay: .25s;
+    transition-delay: .2s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) img {
@@ -322,7 +333,7 @@ nav ul a, button {
     top: 50%;
     left: -197vw;
     width: 15vw;  
-    transition-delay: .3s;
+    transition-delay: .15s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(8) img {
@@ -330,7 +341,7 @@ nav ul a, button {
     top: 50%;
     left: -213vw;
     width: 15vw;  
-    transition-delay: .35s;
+    transition-delay: .25s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(9) img {
@@ -338,7 +349,7 @@ nav ul a, button {
     left: -229vw;
     top: 52%;
     width: 15vw;  
-    transition-delay: .4s;
+    transition-delay: .25s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(10) img {
@@ -346,7 +357,7 @@ nav ul a, button {
     left: -245vw;
     top: 50%;
     width: 15vw;  
-    transition-delay: .45s;
+    transition-delay: .5s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(11) img {
@@ -354,15 +365,15 @@ nav ul a, button {
     left: -262vw;
     top: 50%;
     width: 15vw;  
-    transition-delay: .5s;
+    transition-delay: .6s;
 }
 
 .ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(12) img {
     position: absolute;
     left: -280vw;
-    top: 50%;
+    top: 52%;
     width: 15vw;  
-    transition-delay: .6s;
+    transition-delay: .65s;
 }
 
 
