@@ -212,10 +212,11 @@ nav ul a, button {
 .ScrollGallery-module__stickyContainer {
     position: sticky;
     top: 0px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-image: url(images/lycoris_flower.fa69d9e8ac9ffdd4ddebf458ef8e4808.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -226,7 +227,7 @@ nav ul a, button {
     position: absolute;
     height: 100%;
     will-change: transform;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
 .ScrollGallery-module__cardContainer {
@@ -234,7 +235,7 @@ nav ul a, button {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     height: 100%;
 }
 
@@ -249,13 +250,13 @@ nav ul a, button {
     list-style: none;
     height: 100%;
     position: relative;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 33vw;
     display: block;
 }
 
 .ScrollGallery-module__floatMode .ScrollGallery-module__modelPictures {
-    height: 300px;
+    height: auto;
     width: 500px;
     margin-right: 50px;
     box-shadow: 25px 5px 5px #888;
