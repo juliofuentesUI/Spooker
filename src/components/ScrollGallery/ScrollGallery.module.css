@@ -62,12 +62,12 @@
 }
 
 .modelPictures {
-    height: 100%;
-    width: 500px;
+    height: auto;
+    width: 410px;
     margin-right: 50px;
     box-shadow: 25px 5px 5px #888;
     position: relative;
-    top: 0;
+    top: 20%;
     left: 0;
     transition: all 1s ease;
 }
