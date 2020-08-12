@@ -53,6 +53,7 @@ const ScrollGallery = (props) => {
                 let difference = Math.abs(offsetTop - initialOffset);
                 setTranslateX(-difference);
             } else {
+                setTranslateX(0);
                 setFloatMode(true);
             }   
         });
