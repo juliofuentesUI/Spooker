@@ -7,7 +7,7 @@ const Item = ({ name, imageUrl, price}) => {
 
     if (hovered) {
         console.log(`Hovered for ${name} at ${price}`);
-    };
+    }
 
     return (
         <div ref={hoverRef} className={classes.productCard}>

@@ -13,12 +13,12 @@ const useHover = () => {
      //attach eventListeners
      node.addEventListener('mouseover', handleMouseOver);
      node.addEventListener('mouseout', handleMouseOut);
+     // on dismount disattach
+     return () => {
+       node.removeEventListener('mouseover', handlemOuseOver);
+       node.removeEventListener('mouseout', handleMouseOut);
+     };
    }
-    // on dismount disattach
-    return () => {
-      node.removeEventListener('mouseover', handlemOuseOver);
-      node.removeEventListener('mouseout', handleMouseOut);
-    };
   }, []);
 
   return [myRef, hovered];
