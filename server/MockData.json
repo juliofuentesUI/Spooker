@@ -95,6 +95,36 @@
         "id": "6",
         "gender": "female",
         "imageUrl": "/images/models/model6.jpg"
+    },
+    {
+        "id": "7",
+        "gender": "male",
+        "imageUrl": "/images/models/model7.jpg"
+    },
+    {
+        "id": "8",
+        "gender": "female",
+        "imageUrl": "/images/models/model8.jpg"
+    },
+    {
+        "id": "9",
+        "gender": "female",
+        "imageUrl": "/images/models/model9.jpg"
+    },
+    {
+        "id": "10",
+        "gender": "male",
+        "imageUrl": "/images/models/model10.jpg"
+    },
+    {
+        "id": "11",
+        "gender": "male",
+        "imageUrl": "/images/models/model11.jpg"
+    },
+    {
+        "id": "12",
+        "gender": "female",
+        "imageUrl": "/images/models/model12.jpg"
     }
     ]
 }

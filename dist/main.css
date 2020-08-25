@@ -212,17 +212,22 @@ nav ul a, button {
 .ScrollGallery-module__stickyContainer {
     position: sticky;
     top: 0px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(images/lycoris_flower.fa69d9e8ac9ffdd4ddebf458ef8e4808.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .ScrollGallery-module__carousel {
     position: absolute;
     height: 100%;
     will-change: transform;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
 .ScrollGallery-module__cardContainer {
@@ -230,18 +235,320 @@ nav ul a, button {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     height: 100%;
 }
 
-.ScrollGallery-module__sampleCard {
-    position: relative;
-    height: 300px;
-    width: 500px;
-    background-color: green;
-    margin-right: 50px;
+
+.ScrollGallery-module__cardContainer li {
+    list-style: none;
+    height: 100%;
+    width: 100%;
 }
 
+.ScrollGallery-module__floatMode .ScrollGallery-module__cardContainer li {
+    list-style: none;
+    height: 100%;
+    position: relative;
+    /* border: 2px solid red; */
+    width: 33vw;
+    display: block;
+}
+
+.ScrollGallery-module__floatMode .ScrollGallery-module__modelPictures {
+    height: auto;
+    width: 500px;
+    margin-right: 50px;
+    box-shadow: 25px 5px 5px #888;
+    position: relative;
+    top: 35%;
+    left: 0;
+    transition: all 1s ease;
+    animation: ScrollGallery-module__horizontal 3.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__modelPictures {
+    height: auto;
+    width: 410px;
+    margin-right: 50px;
+    box-shadow: 25px 5px 5px #888;
+    position: relative;
+    top: 20%;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.ScrollGallery-module__floatMode {
+
+}
+
+/* .carousel li img {
+    transition: all 1s ease;
+} */
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(1) img {
+    position: absolute;
+    top: 3.5vw;
+    left: 2vw;
+    width: 14vw;  
+    transition-delay: .01s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(1) {
+    animation: ScrollGallery-module__vertical 7.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(2) img {
+    position: absolute;
+    top: 8vw;
+    left: -17vw;
+    width: 15vw;  
+    transition-delay: .05s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(2) {
+    animation: ScrollGallery-module__vertical 4.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(3) img {
+    position: absolute;
+    top: 1vh;
+    left: -32vw;
+    width: 13vw;  
+    transition-delay: .15s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(3) {
+    animation: ScrollGallery-module__vertical 6.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(4) img {
+    position: absolute;
+    top: 6vh;
+    left: -48vw;
+    width: 13vw;  
+    transition-delay: .35s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(4) {
+    animation: ScrollGallery-module__vertical 7.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(5) img {
+    position: absolute;
+    top: 1vh;
+    left: -65vw;
+    width: 13vw;  
+    transition-delay: .4s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(5) {
+    animation: ScrollGallery-module__vertical 4.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(6) img {
+    position: absolute;
+    top: 5vh;
+    left: -82vw;
+    width: 15vw;  
+    transition-delay: .2s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(6) {
+    animation: ScrollGallery-module__vertical 6.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) img {
+    position: absolute;
+    top: 39%;
+    left: -193vw;
+    width: 15vw;  
+    transition-delay: .15s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(7) {
+    animation: ScrollGallery-module__vertical 7.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(8) img {
+    position: absolute;
+    top: 50%;
+    left: -206vw;
+    width: 15vw;  
+    transition-delay: .25s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(8) {
+    animation: ScrollGallery-module__vertical 3.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(9) img {
+    position: absolute;
+    left: -225vw;
+    top: 35%;
+    width: 14vw;  
+    transition-delay: .25s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(9) {
+    animation: ScrollGallery-module__vertical 6.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(10) img {
+    position: absolute;
+    left: -240vw;
+    top: 42%;
+    width: 15vw;  
+    transition-delay: .5s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(10) {
+    animation: ScrollGallery-module__vertical 6.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(11) img {
+    position: absolute;
+    left: -262vw;
+    top: 50%;
+    width: 11vw;  
+    transition-delay: .6s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(11) {
+    animation: ScrollGallery-module__vertical 6.5s ease-in-out infinite alternate;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(12) img {
+    position: absolute;
+    left: -285vw;
+    top: 52%;
+    width: 15vw;  
+    transition-delay: .65s;
+}
+
+.ScrollGallery-module__carousel.ScrollGallery-module__floatMode li:nth-child(12) {
+    animation: ScrollGallery-module__vertical 6.5s ease-in-out infinite alternate;
+}
+
+@keyframes ScrollGallery-module__horizontal {
+    0% {
+        transform: translateX(-5px)
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes ScrollGallery-module__vertical {
+    0% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* BELOW HERE is animating the images FROM normal mode to FLOAT mode.
+the transition-delay for floatmode nth child img is for animation going horiozontal or vertical */
+
+
+/* .carousel li:nth-child(1) img {
+    position: absolute;
+    top: 2vw;
+    left: 0;
+    width: 15vw;  
+    transition-delay: .01s;
+}
+
+.carousel li:nth-child(2) img {
+    position: absolute;
+    top: 4vw;
+    left: 16vw;
+    width: 15vw;  
+    transition-delay: .05s;
+}
+
+.carousel li:nth-child(3) img {
+    position: absolute;
+    top: 2vh;
+    left: 32vw;
+    width: 15vw;  
+    transition-delay: .45s;
+}
+
+.carousel li:nth-child(4) img {
+    position: absolute;
+    top: 4vh;
+    left: 49vw;
+    width: 15vw;  
+    transition-delay: .35s;
+}
+
+.carousel li:nth-child(5) img {
+    position: absolute;
+    top: 4vh;
+    left: 66vw;
+    width: 15vw;  
+    transition-delay: .4s;
+}
+
+.carousel li:nth-child(6) img {
+    position: absolute;
+    top: 2vh;
+    left: 83vw;
+    width: 15vw;  
+    transition-delay: .3s;
+}
+
+.carousel li:nth-child(7) img {
+    position: absolute;
+    bottom: 2vh;
+    left: 0vw;
+    width: 15vw;  
+    transition-delay: .2s;
+}
+
+.carousel li:nth-child(8) img {
+    position: absolute;
+    bottom: 3vh;
+    left: 18vw;
+    width: 15vw;  
+    transition-delay: .15s;
+}
+
+.carousel li:nth-child(9) img {
+    position: absolute;
+    left: 32vw;
+    bottom: 13vh;
+    width: 15vw;  
+    transition-delay: .1s;
+}
+
+.carousel li:nth-child(10) img {
+    position: absolute;
+    left: 47vw;
+    bottom: 2vh;
+    width: 15vw;  
+    transition-delay: .25s;
+}
+
+.carousel li:nth-child(11) img {
+    position: absolute;
+    left: 63vw;
+    bottom: 2vh;
+    width: 15vw;  
+    transition-delay: .5s;
+}
+
+.carousel li:nth-child(12) img {
+    position: absolute;
+    left: 83vw;
+    bottom: 3vh;
+    width: 15vw;  
+    transition-delay: .6s;
+} */
 
 
 .FloatGallery-module__samplePictures {

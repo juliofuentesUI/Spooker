@@ -24,7 +24,7 @@ class App extends Component {
         return (
             <div>
                 <Layout>
-                    <FloatGallery />
+                    {/* <FloatGallery /> */}
                     <ScrollGallery />
                     {routes}
                     {/* routes will be rendered here, but despite what routes load
