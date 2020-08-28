@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar } from '../../components/NavBar/Navbar';
 import Footer from '../../components/Footer/Footer.js';
+import Ticker from '../../components/Ticker/Ticker';
+
 // import classes from './Layout.module.css';
 //import redux later.
 //this component will act as the OVERLAY component responsible for z-index type 
@@ -13,6 +15,7 @@ class Layout extends Component {
             <main>
                 <Navbar />
                 {this.props.children}
+                <Ticker />
                 <Footer />
             </main>
         );

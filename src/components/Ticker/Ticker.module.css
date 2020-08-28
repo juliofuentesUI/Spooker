@@ -1,0 +1,14 @@
+.ticker {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 16px 0px;
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.tickerText {
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}
