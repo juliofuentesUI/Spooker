@@ -25,7 +25,6 @@ const ScrollGallery = (props) => {
     const containerRef = useRef(null);
     const carouselRef = useRef(null);
 
-
     const calcDynamicHeight = objectWidth => {
         const vw = window.innerWidth;
         const vh = window.innerHeight;
