@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Shop from './containers/Shop/Shop';
 import ScrollGallery from './components/ScrollGallery/ScrollGallery';
 import FloatGallery from './components/FloatGallery/FloatGallery';
+import FrontPageContent from './containers/FrontPageContent/FrontPageContent';
 
 class App extends Component {
 
@@ -16,8 +17,8 @@ class App extends Component {
 
         let routes = (
             <Switch>
-                <Route path="/Shop" exact 
-                component={Shop} />
+                <Route path="/" exact 
+                component={FrontPageContent} />
             </Switch>
         );
 
