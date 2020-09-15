@@ -126,5 +126,14 @@
         "gender": "female",
         "imageUrl": "/images/models/model12.jpg"
     }
+    ],
+    "contentPanels": [{
+        "id": 1,
+        "containerImage": "./images/ContentPanelImages/containerImage1.jpg"
+    },
+    {
+        "id": 2,
+        "containerImage": "./images/ContentPanelImages/containerImage2.jpg"
+    }
     ]
 }
