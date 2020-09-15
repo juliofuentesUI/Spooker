@@ -1,5 +1,7 @@
 import React from 'react';
 import ContentPanel from './../../components/ContentPanel/ContentPanel';
+import { useSelector } from 'reat-redux';
+
 
 const FrontPageContent = (props) => {
   //Get ContentPanels from server
