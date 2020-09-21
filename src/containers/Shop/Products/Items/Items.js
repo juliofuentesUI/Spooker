@@ -6,7 +6,7 @@ const Items = (props) => {
 
     const allProducts = useSelector(state => state.allProducts);
 
-    const items = allProducts.map((product, index ) => {
+    const items = allProducts.map((product, index) => {
         return <Item name={product.name} key={index} imageUrl={product.imageUrl} price={product.price}/>;
     });
 

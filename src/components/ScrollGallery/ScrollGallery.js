@@ -54,7 +54,7 @@ const ScrollGallery = (props) => {
             } else {
                 setTranslateX(0);
                 setFloatMode(true);
-            }   
+            } 
         });
     };
 

@@ -10,7 +10,7 @@ const ContentPanel = (props) => {
       </div>
       <div className={classes.imageContainer}>
         <div className={classes.imageWrapper}>
-          <img src={} />
+          <img src={props.containerImage} />
         </div>
       </div>
     </article>
